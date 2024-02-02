@@ -117,7 +117,7 @@ Initially, I trained models yolov8n and yolovm for 50 epochs. Encountering two i
 
 Reduced training to 20 epochs, comparing models. Clear correlation observed between model size and improved mAP, precision, and recall. Leveraged hyperparameter research from Kaggle, adopting the CFG class from [Hinepo's notebook](https://www.kaggle.com/code/hinepo/yolov8-finetuning-for-ppe-detection):
 
-<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/experiment-2-yolov8m-20-epochs-finetunning.png >
+<img src = "https://github.com/bccestari/PPE-Detection/blob/main/images/experiment-2-yolov8m-20-epochs-finetunning.png" width = 60% height = 60%>
 
 **Conclusion**: Inference time improved to 17 ms with 2.5x less training (25 minutes).
  
@@ -163,7 +163,7 @@ Stumbled upon a remarkable repository from [sovit-123](https://github.com/sovit-
 
 I encountered challenges when attempting to log experiments with ClearML, so I switched to Weights and Biases. While using WandB in Kaggle, I faced issues as there was no way to input data in the Command-Line Interface (CLI). I resolved this by employing wandb.login() before initiating the training process. I trained the model for 50 epochs due to poor performance observed in the initial 20 epochs:
 
-
+<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/Faster-RCNN-wandb.png>
 
 
 **Conclusion**: The model plateaus after 7 epochs (390 steps/epoch), with mAP50 hovering between 0.65 and 0.70 up to 50 epochs. I've abandoned Faster R-CNN, as suggested in Study 2, due to the necessity for extensive fine-tuning on the specific dataset. However, resource constraints make iterative attempts challenging, especially given that the model requires three times more training time compared to YOLO.
