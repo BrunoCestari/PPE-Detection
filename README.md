@@ -179,19 +179,19 @@ I pretend to train the model for 300 epochs, but the mAP50 plateaued at 0.84 aft
 
 **--------------------------------------------------------------------------------------------------------------------------**
 
--**Precision (Class B)**: 0.90
+- **Precision (Class B)**: 0.90
 
--**Recall (Class B)**: 0.78
+- **Recall (Class B)**: 0.78
 
--**mAP50 (Class B)**: 0.84
+- **mAP50 (Class B)**: 0.84
 
--**mAP50-95 (Class B)**: 0.57
+- **mAP50-95 (Class B)**: 0.57
 
--**Inference Time**: 17 ms
+- **Inference Time**: 17 ms
 
--**Time to Train**: 3.5 hours
+- **Time to Train**: 3.5 hours
 
--**Time per Epoch**: Approximately 95 seconds
+- **Time per Epoch**: Approximately 95 seconds
 
 
 **--------------------------------------------------------------------------------------------------------------------------**
@@ -208,17 +208,17 @@ I pretend to train the model for 300 epochs, but the mAP50 plateaued at 0.84 aft
 
 ## Inference
 
-Videos with Inference Yolov
-
-Videos with Inference Faster CNN
+Video showing the detection with Yolov8ml model: 
 
 
 
 
-## Final thoughts
 
-- How improve data - augmentations 
-- How improve Yolo Models
-- How improve Faster R-CNN
-- How build the detector
+
+## TO DO
+
+- Improve data: Apply different augmentations 
+- Improve Yolo model: Make inference faster
+- improve Faster R-CNN: Fine tuning? Consider if the effort worth it.  
+- Build the detector?: I don't need track every frame, just need one occurrence of NO PPE.
  </div>
