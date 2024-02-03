@@ -25,6 +25,19 @@ I began by looking at a real-life problem suitable for object detection models. 
 
 These classes may exhibit variations depending on the industry and location; for instance, different colored hard hats or various types of masks. The model must detect swiftly and accurately to prevent injuries or fatalities. Typically, the detector works on camera images within workplaces, alerting managers if workers are not using PPE or are in proximity to hazardous objects like heavy machinery.
 
+## Models
+
+The initial step involved finding the most recent studies addressing the PPE Detection problem. I sought to understand common approaches and models. Three notable studies were identified:
+
+1. [PPE detector: a YOLO-based architecture to detect personal protective equipment (PPE) for construction sites](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9299268/) (2022)
+
+   
+2. [Personal Protective Equipment Detection: A Deep-Learning-Based Sustainable Approach
+](https://www.mdpi.com/2071-1050/15/18/13990) (September 2023)
+
+3. [Artificial Intelligence System for Detecting the Use of Personal Protective Equipment](https://thesai.org/Downloads/Volume14No5/Paper_61-Artificial_Intelligence_System.pdf) (2023)
+
+All three studies predominantly featured the YOLOv5 model. Study 2, which listed various studies and ranked models, reported that Faster R-CNN with a ResNet50 backbone exhibited a superior mAP50 (96%) compared to YOLOv5 (63%) when trained to 20 epochs. Given the disparate datasets and classes used, I decided to explore and compare Faster R-CNN with the most recent YOLOv8 models.
 
 ## Data
 
@@ -64,6 +77,8 @@ Validation is the most important step in the start of any machine/deep learning 
 
 ## Metrics
 
+<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/IOU.png width = 70% height = 70%>
+
 The most relevant metrics in Multiclass Object Detection are:
 
 1. **IoU (Intersection over Union)**: Measures the overlap between predicted and ground truth bounding boxes, serving as a key indicator of localization accuracy.
@@ -77,24 +92,6 @@ The most relevant metrics in Multiclass Object Detection are:
 5. **Inference Time**: The time taken by the model to process and make predictions on new data, a crucial metric for real-time applications and deployment.
 
 mAP50, Precision, Recall and Inference time are used to compare models in this project. 
-
-IoU Imagem
-
-
-
-## Models
-
-The initial step involved finding the most recent studies addressing the PPE Detection problem. I sought to understand common approaches and models. Three notable studies were identified:
-
-1. [PPE detector: a YOLO-based architecture to detect personal protective equipment (PPE) for construction sites](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9299268/) (2022)
-
-   
-2. [Personal Protective Equipment Detection: A Deep-Learning-Based Sustainable Approach
-](https://www.mdpi.com/2071-1050/15/18/13990) (September 2023)
-
-3. [Artificial Intelligence System for Detecting the Use of Personal Protective Equipment](https://thesai.org/Downloads/Volume14No5/Paper_61-Artificial_Intelligence_System.pdf) (2023)
-
-All three studies predominantly featured the YOLOv5 model. Study 2, which listed various studies and ranked models, reported that Faster R-CNN with a ResNet50 backbone exhibited a superior mAP50 (96%) compared to YOLOv5 (63%) when trained to 20 epochs. Given the disparate datasets and classes used, I decided to explore and compare Faster R-CNN with the most recent YOLOv8 models.
 
 
 
@@ -128,11 +125,11 @@ After the improvements of fine tuning, I started the comparison of yolov8l and y
 
 **Yolov8l-Finetuning-20-epochs**:
 
-<img src = "https://github.com/bccestari/PPE-Detection/blob/main/images/Experiment-8_PPE_Detector_yolov8l_20_epochs.png" height = 40%>
+<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/Yolov8l-Finetuning-20-epochs.png>
 
 **Yolov8x-Finetuning-20-epochs**:
 
-<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/10_PPE_Detector_yolov8x_20_epochs.png>
+<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/Yolov8x-Finetuning-20-epochs.png>
 
 **Conclusion**: Very close to mAP50; yolov8l gains in precision, yolov8x in recall.
 
@@ -142,10 +139,10 @@ The results:
 
 **Yolov8l-Finetuning-50-epochs**:
 
-<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/Experiment-8-Yolov8l.png >
+<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/Experiment-8-Yolov8l.png>
 
 **Yolov8x-Finetuning-50-epochs**:
-<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/Experiment-10-yolov8x.png>
+<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/Experiment-10-yolov8x.png >
 
 
 
