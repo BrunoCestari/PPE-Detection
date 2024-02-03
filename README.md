@@ -1,13 +1,14 @@
 # PPE Detection: YOLOv8 vs Faster R-CNN
 
+<div align="justify"> 
+	
 ## Objective
 
+	 
 This concise project aims to delve into the fundamentals of Object Detection within the realm of Computer Vision. The multitude of technologies in this field can be overwhelming, making it challenging to choose a specific path. While tutorials provide a solid starting point, a true grasp of complex technologies, such as neural networks, only comes through hands-on experience. This project serves as a log of my journey, detailing steps taken in contrast to a conventional repository. Feel free to use it as a guide if you're embarking on a similar learning path.
-
-
 ## Tools
 
-<img src = "https://github.com/bccestari/PPE-Detection/blob/main/images/diagram.png" width = 80% height = 50%> 
+<img src = "https://github.com/bccestari/PPE-Detection/blob/main/images/diagram.png" > 
 
 - **Ultralytics YOLOv8**: Object detection model
 - **PyTorch Faster R-CNN-ResNet50**: Object detection model
@@ -20,6 +21,7 @@ This concise project aims to delve into the fundamentals of Object Detection wit
 
 
 ## Problem Definition
+
 
 I began by looking at a real-life problem suitable for object detection models. Upon researching companies in my country (Brazil), I identified Personal Protective Equipment (PPE) Detection as a compelling area of interest. Efficient PPE detection has the potential to save lives and enhance working conditions across various industries. This problem involves multiclass detection, necessitating identification of persons, machinery, vehicles, safety cones, masks, safety vests, hard hats, and gloves.
 
@@ -77,7 +79,8 @@ Validation is the most important step in the start of any machine/deep learning 
 
 ## Metrics
 
-<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/IOU.png width = 70% height = 70%>
+<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/IOU.png>
+
 
 The most relevant metrics in Multiclass Object Detection are:
 
@@ -218,3 +221,4 @@ Videos with Inference Faster CNN
 - How improve Yolo Models
 - How improve Faster R-CNN
 - How build the detector
+ </div>
