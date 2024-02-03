@@ -110,7 +110,7 @@ Initially, I trained models yolov8n and yolovm for 50 epochs. Encountering two i
 
 **Conclusion**:  I need faster iteration and model tuning.
 
-##Experiment 2: Fine Tuning YOLOv8m
+## Experiment 2: Fine Tuning YOLOv8m
 
 Reduced training to 20 epochs, comparing models. Clear correlation observed between model size and improved mAP, precision, and recall. Leveraged hyperparameter research from Kaggle, adopting the CFG class from [Hinepo's notebook](https://www.kaggle.com/code/hinepo/yolov8-finetuning-for-ppe-detection):
 
@@ -165,6 +165,42 @@ I encountered challenges when attempting to log experiments with ClearML, so I s
 
 
 **Conclusion**: The model plateaus after 7 epochs (390 steps/epoch), with mAP50 hovering between 0.65 and 0.70 up to 50 epochs. I've abandoned Faster R-CNN, as suggested in Study 2, due to the necessity for extensive fine-tuning on the specific dataset. However, resource constraints make iterative attempts challenging, especially given that the model requires three times more training time compared to YOLO.
+
+
+
+## Experiment 5: Yolov8l Fine-tuning till 133 epochs
+
+
+I pretend to train the model for 300 epochs, but the mAP50 plateaued at 0.84 after 100 epochs. Satisfied with this performance, I decided to stop the training at that point. The model maintained a fast inference time of 17 ms, which I find satisfactory for my detector. I will utilize this model on the test set for making inferences. Below are the results for the model:  
+
+
+**--------------------------------------------------------------------------------------------------------------------------**
+
+-**Precision (Class B)**: 0.90
+
+-**Recall (Class B)**: 0.78
+
+-**mAP50 (Class B)**: 0.84
+
+-**mAP50-95 (Class B)**: 0.57
+
+-**Inference Time**: 17 ms
+
+-**Time to Train**: 3.5 hours
+
+-**Time per Epoch**: Approximately 95 seconds
+
+
+**--------------------------------------------------------------------------------------------------------------------------**
+
+**IMAGES AND GRAPHS FROM THE EXPERIMENT:**
+
+
+<img src = https://github.com/bccestari/PPE-Detection/blob/main/runs/detect/PPE_Detector_yolov8l_finetuning-133_epochs/val_batch1_pred.jpg>
+<img src = https://github.com/bccestari/PPE-Detection/blob/main/runs/detect/PPE_Detector_yolov8l_finetuning-133_epochs/results.png>
+<img src = https://github.com/bccestari/PPE-Detection/blob/main/runs/detect/PPE_Detector_yolov8l_finetuning-133_epochs/labels.jpg>
+<img src = https://github.com/bccestari/PPE-Detection/blob/main/runs/detect/PPE_Detector_yolov8l_finetuning-133_epochs/confusion_matrix_normalized.png>
+
 
 
 ## Inference
