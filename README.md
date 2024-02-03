@@ -139,10 +139,11 @@ The results:
 
 **Yolov8l-Finetuning-50-epochs**:
 
-<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/Experiment-8-Yolov8l.png>
+<img src = "https://github.com/bccestari/PPE-Detection/blob/main/images/Experiment-8-Yolov8l.png">
 
 **Yolov8x-Finetuning-50-epochs**:
-<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/Experiment-10-yolov8x.png >
+
+<img src = "https://github.com/bccestari/PPE-Detection/blob/main/images/Experiment-10-yolov8x.png">
 
 
 
