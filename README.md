@@ -125,11 +125,11 @@ After the improvements of fine tuning, I started the comparison of yolov8l and y
 
 **Yolov8l-Finetuning-20-epochs**:
 
-<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/Yolov8l-Finetuning-20-epochs.png>
+<img src = "https://github.com/bccestari/PPE-Detection/blob/main/images/Yolov8l-Finetuning-20-epochs.png">
 
 **Yolov8x-Finetuning-20-epochs**:
 
-<img src = https://github.com/bccestari/PPE-Detection/blob/main/images/Yolov8x-Finetuning-20-epochs.png>
+<img src = "https://github.com/bccestari/PPE-Detection/blob/main/images/Yolov8x-Finetuning-20-epochs.png">
 
 **Conclusion**: Very close to mAP50; yolov8l gains in precision, yolov8x in recall.
 
