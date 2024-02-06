@@ -208,7 +208,7 @@ I pretend to train the model for 300 epochs, but the mAP50 plateaued at 0.84 aft
 
 ## Inference
 
-Video showing the detection with Yolov8ml  model:
+Video showing the detection with Yolov8l  model (please, click in the image bellow):
 
 [![Watch the Video](https://img.youtube.com/vi/D5g9JcR3-Sg/0.jpg)](https://www.youtube.com/watch?v=D5g9JcR3-Sg)
 
