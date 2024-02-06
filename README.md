@@ -1,6 +1,6 @@
 # PPE Detection: YOLOv8 vs Faster R-CNN
 
-<div align="justify"> 
+
 	
 ## Objective
 
@@ -160,7 +160,7 @@ The results:
 
 Conducted concurrently with Experiment 3. Attempted to implement Faster R-CNN from scratch, and faced challenges to make it work  and, consequently, explored alternative approaches. 
 
-Stumbled upon a remarkable repository from [sovit-123](https://github.com/sovit-123): [fasterrcnn-pytorch-training-pipeline](https://github.com/sovit-123/fasterrcnn-pytorch-training-pipeline?tab=readme-ov-file#Train-on-Custom-Dataset](https://github.com/sovit-123/fasterrcnn-pytorch-training-pipeline?tab=readme-ov-file#Train-on-Custom-Dataset) that provide an easy pipeline for Faster R-CNN training using XML forma t data. Used Kaggle T4 x 2 GPUs for training, treating the background as a class.
+Stumbled upon an amazing repository from [sovit-123](https://github.com/sovit-123): [fasterrcnn-pytorch-training-pipeline](https://github.com/sovit-123/fasterrcnn-pytorch-training-pipeline?tab=readme-ov-file#Train-on-Custom-Dataset) that provide an easy pipeline for Faster R-CNN training using XML forma t data. Used Kaggle T4 x 2 GPUs for training, treating the background as a class.
 
 I encountered challenges when attempting to log experiments with ClearML, so I switched to Weights and Biases. While using WandB in Kaggle, I faced issues as there was no way to input data in the Command-Line Interface (CLI). I resolved this by employing wandb.login() before initiating the training process. I trained the model for 50 epochs due to poor performance observed in the initial 20 epochs:
 
@@ -225,4 +225,4 @@ Video showing the detection with Yolov8l  model (please, click in the image bell
 - Improve Yolo model: Make inference faster
 - improve Faster R-CNN: Fine tuning? Consider if the effort worth it.  
 - Build the detector?: I don't need track every frame, just need one occurrence of NO PPE.
- </div>
+
