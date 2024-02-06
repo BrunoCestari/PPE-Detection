@@ -35,7 +35,7 @@ The initial step involved finding the most recent studies addressing the PPE Det
 
    
 2. [Personal Protective Equipment Detection: A Deep-Learning-Based Sustainable Approach
-](https://www.mdpi.com/2071-1050/15/18/13990) (September 2023)
+](https://www.mdpi.com/2071-1050/15/18/13990) (2023)
 
 3. [Artificial Intelligence System for Detecting the Use of Personal Protective Equipment](https://thesai.org/Downloads/Volume14No5/Paper_61-Artificial_Intelligence_System.pdf) (2023)
 
@@ -208,7 +208,11 @@ I pretend to train the model for 300 epochs, but the mAP50 plateaued at 0.84 aft
 
 ## Inference
 
-Video showing the detection with Yolov8ml model: 
+Video showing the detection with Yolov8ml  model:
+
+[![Watch the Video](https://img.youtube.com/vi/D5g9JcR3-Sg/0.jpg)](https://www.youtube.com/watch?v=D5g9JcR3-Sg)
+
+
 
 
 
